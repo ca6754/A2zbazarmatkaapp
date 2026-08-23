@@ -21,7 +21,7 @@
             padding: 20px 15px;
             position: relative;
             overflow-x: hidden;
-            background-color: #0f172a; /* Dark background taaki bubbles acche se dikhein */
+            background-color: #0f172a;
         }
 
         /* Bubbles Animation */
@@ -68,7 +68,7 @@
             }
         }
 
-        /* Container - Transparent with Auto Margin */
+        /* Container */
         .container {
             position: relative;
             z-index: 2;
@@ -86,15 +86,19 @@
             color: #ffffff;
             margin: 0 auto 16px auto;
         }
+
+        /* Circle Photo Setup */
         .app-image {
-            max-width: 100%;
             width: 192px;
-            height: auto;
-            border-radius: 12px;
+            height: 192px;
+            border-radius: 50%; /* Circle (Gol) karne ke liye */
+            object-fit: cover;
             margin: 0 auto 16px auto;
             display: block;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            border: 3px solid rgba(255, 255, 255, 0.2);
         }
+
         .sub-title {
             font-size: 14px;
             font-weight: bold;
@@ -195,7 +199,7 @@
         <!-- Header Title -->
         <p class="header-title">🙏A2Z Bazar - Official MTK app🙏</p>
 
-        <!-- Image -->
+        <!-- Circle Image -->
         <picture>
             <img class="app-image" src="https://d1yei2z3i6k35z.cloudfront.net/18788667/6a873e315e4672.84321393_WhatsAppImage2026-08-20at18.49.04.jpeg" alt="A2Z Bazar Image">
         </picture>
