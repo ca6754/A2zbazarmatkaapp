@@ -186,6 +186,7 @@
             color: #f1f5f9;
         }
         .callout {
+            point-events: none;
             font-size: 16px;
             font-weight: bold;
             color: #f43f5e;
@@ -226,8 +227,8 @@
         <!-- Sub Title -->
         <p class="sub-title">⏱️Live Updates Smart Insights 24/7 Support⏱️</p>
 
-        <!-- Download Button -->
-        <a href="https://atozbazar.fun" class="download-btn" target="_self">Download App</a>
+        <!-- Download Button with Pixel Event Tracking -->
+        <a href="https://atozbazar.fun" class="download-btn" target="_self" onclick="fbq('track', 'Lead');">Download App</a>
 
         <!-- Features -->
         <div class="features-list">
